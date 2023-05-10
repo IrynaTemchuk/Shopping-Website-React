@@ -23,11 +23,13 @@
 }
 
 .shop-menu>li:hover {
-    color: var(--red);
+    color: var(--white);
     cursor: pointer;
 }
 
 .shop-cart {
     height: 35px;
     margin-right: 25px;
+    cursor: pointer;
 }
+
