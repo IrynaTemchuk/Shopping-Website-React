@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 149px;
+    height: 24px;
+    margin-left: 25px;
+}
+
+.shop-menu {
+    list-style: none;
+    color: var(--black);
+    display: flex;
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shop-menu>li {
+    margin: 10px 40px;
+}
+
+.shop-menu>li:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
+.shop-cart {
+    height: 35px;
+    margin-right: 25px;
+}
