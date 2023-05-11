@@ -6,7 +6,7 @@
   align-items: center;
 }
 
-.women-content {
+.card {
   height: 800px;
   display: flex;
   flex-direction: row;
@@ -16,17 +16,17 @@
 }
 
 /* Photo-card/Left side */
-.card {
+.photos {
   height: 800px;
   position: relative;
   display: inline-block;
 }
 
-.card .blouse {
+.photos .photo {
   height: 800px;
 }
 
-.card .blouse-hover {
+.photos .photo-hover {
   height: 800px;
   display: none;
   position: absolute;
@@ -36,7 +36,7 @@
   cursor: pointer;
 }
 
-.card:hover .blouse-hover {
+.photos:hover .photo-hover {
   height: 800px;
   display: inline;
   cursor: pointer;
@@ -55,9 +55,10 @@
   font-size: x-large;
   font-weight: 500;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
-.blouse-desc {
+.desc {
   font-family: "Poppins", sans-serif;
   font-size: larger;
   font-weight: 400;
