@@ -7,8 +7,6 @@ import Dress7 from "../../content/dress7.jpg";
 import Short1 from "../../content/short1.jpg";
 import Short3 from "../../content/short3.jpg";
 
-
-
 const Women = () => {
   return (
     <div className="women-chapter">
