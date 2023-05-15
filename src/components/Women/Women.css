@@ -24,11 +24,11 @@
   border: none;
 }
 
-.carousel-control-next-icon .changed {
+.carousel-control-next-icon {
   background-image: url('../../content/general/arrow-right-s-line.png');
 }
 
-.carousel-control-prev-icon .changed {
+.carousel-control-prev-icon {
   background-image: url('../../content/general/arrow-left-s-line.png');
 }
 
@@ -124,13 +124,14 @@ ul {
   margin-top: 7px;
   width: 170px;
   height: 40px;
-  background: var(--black);
   background: #ffffff;
-  color: #000000;
+  color: var(--blue);
+  border: 2px solid var(--blue);
   border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .buy:focus {
-  background: #000000;
+  background: var(--blue);
   color: #ffffff;
 }

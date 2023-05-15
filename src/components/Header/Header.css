@@ -23,7 +23,7 @@
 }
 
 .shop-menu>li:hover {
-    color: var(--white);
+    color: var(--blue);
     cursor: pointer;
 }
 

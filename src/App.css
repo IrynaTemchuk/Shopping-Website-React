@@ -7,6 +7,7 @@
   --red: #A00000;
   --font: 'Poppins', sans-serif;
   --white: #ffffff;
+  --blue: #334fb4;
 }
 
 * {
@@ -15,7 +16,7 @@
 }
 
 .App {
-  background-color: var(--lightbeige);
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
 }
