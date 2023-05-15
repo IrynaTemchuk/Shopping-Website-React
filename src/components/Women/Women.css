@@ -4,15 +4,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
+}
+.carousel {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   height: 800px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 10px 7px;
+  text-align: center;
+  border: none;
+}
+
+.carousel-control-next-icon .changed {
+  background-image: url('../../content/general/arrow-right-s-line.png');
+}
+
+.carousel-control-prev-icon .changed {
+  background-image: url('../../content/general/arrow-left-s-line.png');
 }
 
 /* Photo-card/Left side */
@@ -40,6 +57,14 @@
   height: 800px;
   display: inline;
   cursor: pointer;
+}
+
+.carousel-control-next-icon .changed {
+  color: #000000;
+}
+
+.carousel-control-prev-icon .changed {
+  color: #000000;
 }
 
 /* Description-card/Right side */
@@ -100,6 +125,12 @@ ul {
   width: 170px;
   height: 40px;
   background: var(--black);
-  color: white;
+  background: #ffffff;
+  color: #000000;
   border-radius: 5px;
+}
+
+.buy:focus {
+  background: #000000;
+  color: #ffffff;
 }

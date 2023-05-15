@@ -1,16 +1,22 @@
 import React from "react";
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Women.css";
-import Blouse4 from "../../content/blouse4.jpg";
-import Blouse2 from "../../content/blouse2.jpg";
-import Dress6 from "../../content/dress6.jpg";
-import Dress7 from "../../content/dress7.jpg";
-import Short1 from "../../content/short1.jpg";
-import Short3 from "../../content/short3.jpg";
+import Blouse4 from "../../content/women/blouse4.jpg";
+import Blouse2 from "../../content/women/blouse2.jpg";
+import Dress6 from "../../content/women/dress6.jpg";
+import Dress7 from "../../content/women/dress7.jpg";
+import Short1 from "../../content/women/short1.jpg";
+import Short3 from "../../content/women/short3.jpg";
 
 const Women = () => {
   return (
     <div className="women-chapter">
-      <div className="carousel">
+          <Carousel fade
+            nextIcon={<span aria-hidden="true" className="carousel-control-next-icon changed" />}
+            prevIcon={<span aria-hidden="true" className="carousel-control-prev-icon changed" />}
+          >
+      <Carousel.Item>
         {/* first position */}
         <div className="card">
           <div className="photos">
@@ -38,7 +44,9 @@ const Women = () => {
             <button className="buy">Buy Now</button>
           </div>
         </div>
-        {/* second position */}
+        </Carousel.Item>
+        <Carousel.Item>
+ {/* second position */}
         <div className="card">
           <div className="photos">
             <img src={Dress6} alt="" className="photo" />
@@ -66,17 +74,23 @@ const Women = () => {
             <button className="buy">Buy Now</button>
           </div>
         </div>
+        </Carousel.Item>
+       
         {/* third position */}
-        <div className="card">
+        <Carousel.Item>
+         <div className="card">
           <div className="photos">
             <img src={Short1} alt="" className="photo" />
             <img src={Short3} alt="" className="photo-hover" />
           </div>
           <div className="description">
-            <h4 className="name">BAGGY PAPERBAG BERMUDA SHORTS WITH BELT</h4>
+            <h4 className="name">BERMUDA SHORTS WITH BELT</h4>
             <p className="desc">
-            High-waist Bermuda shorts with an elasticated waistband and gathered details. <br />
-            Faux leather belt. Front patch pockets and a false rear welt pocket. <br />
+            High-waist Bermuda shorts <br />
+            with an elasticated waistband <br />
+            and gathered details. <br />
+            Faux leather belt. <br />
+            Front patch pockets and a false rear welt pocket. <br />
             Front zip and button fastening.
             </p>
             <hr />
@@ -94,7 +108,10 @@ const Women = () => {
             <button className="buy">Buy Now</button>
           </div>
         </div>
-      </div>
+      
+        </Carousel.Item>
+        
+      </Carousel>
     </div>
   );
 };
